@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gwu.studentservicesapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".buyPage.BuyPage"
+            android:label="@string/title_activity_buy_page"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".buyPage.BuyActivity"></activity>
+        <activity
+            android:name=".view.LoginActivity"/>
+        <activity
+            android:name=".view.RegistrationActivity"
+            android:label="Registration" />
+        <activity
+            android:name=".view.HomePageActivity"
+            android:label="HomePage" />
+
+        <activity
+            android:name=".view.ItemsListActivity"
+            android:label="Items" />
+        <activity
+            android:name=".view.UserItemListActivity"
+            android:label="Your Items" />
+        <activity
+            android:name=".view.SellPageActivity"
+            android:label="Sell your item" />
+        <activity
+            android:name=".view.UpdateRecordActivity"
+            android:label="Update your item" />
+        <activity
+            android:name=".view.ApartmentActivity"
+            android:label="Post your rental" />
+        <activity
+            android:name=".view.ApartmentListing"
+            android:label="View places available for rent" />
+
+        <activity android:name=".view.ProfileUpdateActivity"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

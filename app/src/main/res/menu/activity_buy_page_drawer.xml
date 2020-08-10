@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/apt"
+            android:icon="@drawable/ic_apt_24dp"
+            android:title="Apartment" />
+        <item
+            android:id="@+id/clothes"
+            android:icon="@drawable/ic_cloth_24dp"
+            android:title="Cloth" />
+        <item
+            android:id="@+id/furniture"
+            android:icon="@drawable/ic_furniture_24dp"
+            android:title="Furniture" />
+<!--        <item-->
+<!--            android:id="@+id/nav_tools"-->
+<!--            android:icon="@drawable/ic_menu_manage"-->
+<!--            android:title="@string/menu_tools" />-->
+
+        <item
+            android:id="@+id/books"
+            android:icon="@drawable/ic_books_24dp"
+            android:title="Books"/>
+
+
+    </group>
+
+    <item android:title="Cart">
+        <menu>
+            <item
+                android:id="@+id/cart"
+                android:icon="@drawable/ic_cart_24dp"
+                android:title="ShoppingCart" />
+<!--            <item-->
+<!--                android:id="@+id/nav_send"-->
+<!--                android:icon="@drawable/ic_menu_send"-->
+<!--                android:title="@string/menu_send" />-->
+        </menu>
+    </item>
+
+</menu>

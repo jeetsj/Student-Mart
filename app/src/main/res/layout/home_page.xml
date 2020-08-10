@@ -1,0 +1,81 @@
+<RelativeLayout android:id="@+id/magaLoginLayout"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/ap_regText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/cherry_swash"
+        android:text="@string/categorySelect"
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/textbooksButton"
+        android:contentDescription="Books"
+        android:layout_width="160dip"
+        android:layout_height="160dip"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/textbooks_e1498332558390"
+        android:text="Books"/>
+    
+    <ImageButton
+        android:id="@+id/furniturebutton"
+        android:contentDescription="Furniture"
+        android:layout_width="160dip"
+        android:layout_height="160dip"
+        android:layout_below="@+id/textbooksButton"
+        android:layout_alignStart="@+id/textbooksButton"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/furniture_icon"
+        android:text="@+id/furniturebutton">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/clothBtn"
+        android:contentDescription="Clothes"
+        android:layout_width="160dip"
+        android:layout_height="160dip"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="65dp"
+        android:layout_toRightOf="@+id/textbooksButton"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cloth_icon"
+        android:text="@+id/clothBtn">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/ApartmentBtn"
+        android:contentDescription="Apartment"
+        android:layout_width="160dip"
+        android:layout_height="160dip"
+        android:layout_below="@+id/clothBtn"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/furniturebutton"
+        android:scaleType="centerCrop"
+        android:src="@drawable/apartment_icon"
+        android:text="@+id/ApartmentBtn">
+
+    </ImageButton>
+
+</RelativeLayout>
+

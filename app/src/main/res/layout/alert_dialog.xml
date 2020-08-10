@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/alert_dialog_single_choice_check_box_list_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiple Choice Check Box Dialog"
+        android:padding="20dp"/>
+
+</LinearLayout>

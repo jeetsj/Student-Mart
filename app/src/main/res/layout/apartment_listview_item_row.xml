@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip">
+    <!-- ListRow Left side Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="101dp"
+            android:layout_height="84dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/no_image_available" />
+    </LinearLayout>
+
+    <!-- Rightend Arrow
+    <ImageButton
+        android:id="@+id/moremenu"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_menu_more" />-->
+
+    <TextView
+        android:id="@+id/apt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Apartment Description"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/apt_rent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apartment Rent"
+        android:padding="5dp"
+        android:layout_below="@+id/apt_description"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/apt_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apartment Location"
+        android:padding="5dp"
+        android:layout_below="@+id/apt_rent"
+        android:gravity="center"
+        android:textStyle="bold" />
+</RelativeLayout>

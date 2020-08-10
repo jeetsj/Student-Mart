@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/page_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/cherry_swash"
+        android:text="Enter item details"
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Item_category"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/page_name"
+        android:background="@drawable/et_custom"
+        android:layout_marginTop="10dp"
+        android:ems="10"/>
+
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/cherry_swash"
+        android:hint="Product Name"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/Item_category"
+        tools:targetApi="o" />
+
+
+    <EditText
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/cherry_swash"
+        android:hint="Product Description..."
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/product_name"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/cherry_swash"
+        android:hint="Product Price..."
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/product_description"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/street_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/cherry_swash"
+        android:hint="Street"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/product_price"
+        tools:targetApi="o" />
+
+    <AutoCompleteTextView
+        android:id="@+id/state_address"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:hint="State"
+        android:layout_below="@+id/street_address"
+        android:background="@drawable/et_custom"
+        android:ems="10"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/city_address"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/state_address"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:hint="City"
+        android:layout_below="@+id/street_address"
+        android:background="@drawable/et_custom"
+        android:ems="10"/>
+
+    <EditText
+        android:id="@+id/zip_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Zipcode"
+        android:inputType="phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/cherry_swash"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/city_address"/>
+
+    <TextView
+        android:id="@+id/Country_address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/cherry_swash"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:text="USA"
+        android:layout_below="@id/zip_address"/>
+
+    <ImageButton
+        android:id="@+id/addImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Country_address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_custom"
+        android:text="Upload Profile Picture" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Country_address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="false"
+        android:fontFamily="@font/cherry_swash"
+        android:hint="Click here to Upload Picture"
+        android:padding="10dp"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btn_add_new_product"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addImageButton"
+        android:background="@drawable/btn_custom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/cherry_swash"
+        android:textColor="@android:color/white"
+        android:text="Add Product"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addImageButton"
+        android:background="@drawable/btn_custom"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/btn_add_new_product"
+        android:fontFamily="@font/cherry_swash"
+        android:textColor="@android:color/white"
+        android:text="Cancel"/>
+
+</RelativeLayout>
+</ScrollView>

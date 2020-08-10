@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/apt">
+
+    <fragment
+        android:id="@+id/apt"
+        android:name="com.gwu.studentservicesapp.buyPage.booksFragment"
+        android:label="Apartment"
+        tools:layout="@layout/recycler_view"/>
+
+    <fragment
+        android:id="@+id/clothes"
+        android:name="com.gwu.studentservicesapp.buyPage.clothesFragment"
+        android:label="Cloth"
+        tools:layout="@layout/recycler_view" />
+
+    <fragment
+        android:id="@+id/furniture"
+        android:name="com.gwu.studentservicesapp.buyPage.furnitureFragment"
+        android:label="Furniture"
+        tools:layout="@layout/recycler_view" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_tools"-->
+<!--        android:name="com.gwu.studentservicesapp.ui.tools.ToolsFragment"-->
+<!--        android:label="@string/menu_tools"-->
+<!--        tools:layout="@layout/fragment_tools" />-->
+
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.gwu.studentservicesapp.buyPage.cartFragment"
+        android:label="Shopping Cart"
+        tools:layout="@layout/recycler_view" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_send"-->
+<!--        android:name="com.gwu.studentservicesapp.ui.send.SendFragment"-->
+<!--        android:label="@string/menu_send"-->
+<!--        tools:layout="@layout/fragment_send" />-->
+
+    <fragment
+        android:id="@+id/books"
+        android:name="com.gwu.studentservicesapp.buyPage.booksFragment"
+        android:label="Books"
+        tools:layout="@layout/recycler_view"/>
+
+</navigation>

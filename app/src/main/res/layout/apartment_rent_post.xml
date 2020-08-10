@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/page_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/cherry_swash"
+        android:text="Post Rental Details"
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/apartment_description"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/cherry_swash"
+        android:hint="Apartment Description"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/page_name"
+        tools:targetApi="o" />
+
+
+    <EditText
+        android:id="@+id/apartment_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/cherry_swash"
+        android:hint="Rental Amount"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/apartment_description"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/apartment_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/et_custom"
+        android:fontFamily="@font/cherry_swash"
+        android:hint="Apartment Location"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/apartment_price"
+        tools:targetApi="o" />
+
+    <ImageButton
+        android:id="@+id/apt_addImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/apartment_location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_custom"
+        android:text="Upload Profile Picture" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/apartment_location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="false"
+        android:fontFamily="@font/cherry_swash"
+        android:hint="Click here to Upload Image"
+        android:padding="10dp"
+        android:textSize="15dp" />
+
+
+    <Button
+        android:id="@+id/btn_add_rental_post"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apt_addImageButton"
+        android:background="@drawable/btn_custom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/cherry_swash"
+        android:textColor="@android:color/white"
+        android:text="Add Post"/>
+
+    <Button
+        android:id="@+id/btn_apt_cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apt_addImageButton"
+        android:background="@drawable/btn_custom"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/btn_add_rental_post"
+        android:fontFamily="@font/cherry_swash"
+        android:textColor="@android:color/white"
+        android:text="Cancel"/>
+
+</RelativeLayout>

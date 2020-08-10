@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_action">
+        <item>Sell</item>
+        <item>Buy</item>
+    </string-array>
+
+    <string-array name="select_action_apartment">
+        <item>Post Vacancy</item>
+        <item>Look for rent</item>
+    </string-array>
+</resources>
